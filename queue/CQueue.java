@@ -1,5 +1,11 @@
 import java.util.LinkedList;
 
+/**
+ * @program: LeetcodeStudy
+ * @description:  题目来自于  https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
+ * @author: puLiangLu
+ * @create: 2023-01-26 12:32
+ **/
 class CQueue {
     //入队
     LinkedList<Integer> stack1;
@@ -24,10 +30,10 @@ class CQueue {
                 while (stack1.size() > 0){
                     stack2.push(stack1.pop());
                 }
-                return stack2.pop();
+                return stack2.removeLast();
             }
         }else {
-            return stack2.pop();
+            return stack2.removeLast();
         }
     }
 }
