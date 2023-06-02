@@ -33,7 +33,7 @@ public class generateMatrix {
 
 
     public static void main(String[] args) {
-        int matrix[][] = {};
+        int matrix[][];
         matrix = generateMatrix(2);
         System.out.println(matrix);
         System.out.println("===============");
